@@ -1,0 +1,127 @@
+.header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logoIcon {
+  color: var(--primary);
+  font-size: 22px;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: 4px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navLink {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: var(--primary);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userArea {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.userIcon {
+  color: var(--primary);
+  font-size: 16px;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.signOutBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.signOutBtn:hover {
+  border-color: var(--error);
+  color: var(--error);
+}
+
+.signInBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--primary);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signInBtn:hover {
+  background: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .userName {
+    display: none;
+  }
+}
