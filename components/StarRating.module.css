@@ -1,0 +1,20 @@
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.starFilled {
+  color: #f6c90e;
+  font-size: 18px;
+}
+
+.starEmpty {
+  color: #d1d5db;
+  font-size: 18px;
+}
+
+.compact .starFilled,
+.compact .starEmpty {
+  font-size: 14px;
+}
