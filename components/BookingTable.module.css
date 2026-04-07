@@ -1,0 +1,162 @@
+.tableWrapper {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+  margin-bottom: 40px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table thead tr {
+  background: #f9f9f7;
+  border-bottom: 2px solid var(--border);
+}
+
+.table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.row {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+
+.row:hover {
+  background: #fafaf8;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.table td {
+  padding: 14px 16px;
+  vertical-align: top;
+}
+
+.guestName {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.guestEmail {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.tableName {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.tableLocation {
+  font-size: 12px;
+  color: var(--primary);
+}
+
+.time {
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.partySize {
+  font-weight: 700;
+  text-align: center;
+}
+
+.allergiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.allergyTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  background: #fef3e2;
+  color: #92400e;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.none {
+  color: var(--text-secondary);
+  font-style: italic;
+  font-size: 13px;
+}
+
+.specialRequests {
+  max-width: 200px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.actionBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.confirmBtn {
+  padding: 6px 12px;
+  background: var(--success);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.confirmBtn:hover {
+  opacity: 0.85;
+}
+
+.cancelBtn {
+  padding: 6px 12px;
+  background: var(--error);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.cancelBtn:hover {
+  opacity: 0.85;
+}
+
+.empty {
+  background: white;
+  border-radius: var(--radius);
+  padding: 60px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+}
