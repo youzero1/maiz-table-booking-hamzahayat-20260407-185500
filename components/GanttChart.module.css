@@ -1,0 +1,168 @@
+.wrapper {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.gantt {
+  display: flex;
+  overflow-x: auto;
+}
+
+.tableColumn {
+  flex-shrink: 0;
+  width: 180px;
+  border-right: 2px solid var(--border);
+}
+
+.tableHeader {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  background: #f9f9f7;
+  border-bottom: 2px solid var(--border);
+}
+
+.tableRow {
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.tableName {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.tableLocation {
+  font-size: 11px;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.timelineColumn {
+  flex: 1;
+  min-width: 600px;
+  position: relative;
+}
+
+.timeHeader {
+  height: 48px;
+  position: relative;
+  background: #f9f9f7;
+  border-bottom: 2px solid var(--border);
+}
+
+.timeLabel {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.timelineRow {
+  height: 56px;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent calc(100% / 16 - 1px),
+    var(--border) calc(100% / 16 - 1px),
+    var(--border) calc(100% / 16)
+  );
+}
+
+.timelineRow:last-child {
+  border-bottom: none;
+}
+
+.bookingBlock {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  border-radius: 6px;
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  min-width: 60px;
+}
+
+.bookingBlock:hover {
+  opacity: 0.85;
+}
+
+.blockName {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blockInfo {
+  font-size: 10px;
+  color: rgba(255,255,255,0.85);
+  white-space: nowrap;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  background: #f9f9f7;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.legendDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.empty {
+  background: white;
+  border-radius: var(--radius);
+  padding: 60px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+}
